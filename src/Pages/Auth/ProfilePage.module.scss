@@ -1,0 +1,35 @@
+@use "../../Styles/variables.scss" as var;
+
+.section {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: var.$space-small;
+    font-size: var.$font-large;
+    @include var.mobile {
+        padding: var.$space-large var.$space-large var.$space-xhuge var.$space-large;
+    }
+
+    & h2 {
+        width: 100%;
+        color: var.$color-secondary-dark;
+        font-size: var.$font-xhuge;
+        text-align: center;
+    }
+
+    .actions{
+        padding: var.$space-large;
+    }
+
+    .forms{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        gap: var.$space-huge;
+        flex-wrap: wrap;
+
+    }
+}  

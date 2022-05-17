@@ -1,0 +1,47 @@
+@use "../../Styles/variables.scss" as var;
+
+.comments {
+  width: 100%;
+  margin: var.$space-huge 0 0 0;
+  padding: var.$space-medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(var.$color-white, 0.7);
+  border-radius: var.$radius-medium;
+  color: var.$color-black;
+
+  h3 {
+    font-size: var.$font-xlarge;
+    @include var.mobile {
+      font-size: var.$font-huge;
+    }
+  }
+
+  h2 {
+    font-size: var.$font-xlarge;
+    @include var.mobile {
+      font-size: var.$font-huge;
+    }
+  }
+
+
+
+}
+
+.reload {
+  width: 100%;
+  margin:  var.$space-small 0;
+  text-align: center;
+  @include var.mobile {
+    margin: var.$space-xlarge var.$space-xhuge 0 0;
+    font-size: var.$font-huge;
+    text-align: right;
+  }
+}
+
+.noComments{
+  font-size: var.$font-xlarge;
+}

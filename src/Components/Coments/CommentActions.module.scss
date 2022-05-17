@@ -1,0 +1,15 @@
+@use "../../Styles/variables.scss" as var;
+
+
+.actions{
+    width:100%;
+    text-align: center;
+
+
+    @include var.mobile {
+        width:50%;
+        text-align: right;
+        
+    }
+
+}

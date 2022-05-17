@@ -1,0 +1,56 @@
+//------------ COLOR VARIABLES --------------//
+
+$color-primary-light: #d3cac0;
+$color-primary: #B3A494;
+$color-primary-dark: #6E5F4E;
+
+$color-secondary-light: #acb2b9;
+$color-secondary: #464c53;
+$color-secondary-dark: #23262a;
+
+$color-accent-light: #E0C09E;
+$color-accent:#C88F52;
+$color-accent-dark: #976530;
+
+$color-white: #F7F7F8;
+$color-grey-300: #E9EAEC;
+$color-grey-500: #8D95A0;
+$color-grey-700: #464C53;
+$color-black: #23262A;
+
+//------------ FONT VARIABLES --------------//
+
+$font-small: 1.2rem; // 12 px
+$font-medium: 1.4rem; // 14 px
+$font-large: 1.6rem; // 16 px
+$font-xlarge: 2rem; // 20 px
+$font-huge: 2.4rem; // 24 px
+$font-xhuge: 3rem; // 30 px
+$font-baner: 3.6rem; // 36 px
+
+//------------ BORDER RADIUS --------------//
+
+$radius-small: 4px;
+$radius-medium: 8px;
+$radius-large: 12px;
+$radius-xlarge: 16px;
+$radius-huge: 32px;
+$radius-xhuge: 48px;
+
+//------------ SPACE VARIABLES --------------//
+
+$space-small: 1rem; // 10 px
+$space-medium: 2rem; // 20 px
+$space-large: 3rem; // 30 px
+$space-xlarge: 4rem; // 40 px
+$space-huge: 5rem; // 50 px
+$space-xhuge: 10rem; // 100 px
+
+//------------ RESPONSIVE BREAKPOINTS --------------//
+
+@mixin mobile {
+  @media only screen and (min-width: 900px) {
+    @content;
+  }
+}
+

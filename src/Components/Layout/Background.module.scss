@@ -1,0 +1,22 @@
+@use "../../Styles/variables.scss" as var;
+
+.main{
+
+    width: 100%;
+    min-height: 80rem;
+    padding: 20rem 0 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url(../../Assets/Img/bcg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+
+
+    @include var.mobile{
+        min-height: 120rem;;
+        padding: 20rem 0 10rem 0;
+    }
+
+}

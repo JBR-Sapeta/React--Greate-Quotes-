@@ -1,0 +1,20 @@
+@use "../../../Styles/variables.scss" as var;
+
+.fit {
+  margin: 0 ;
+  padding: var.$space-small;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: var.$radius-small;
+  background: var.$color-white;
+}
+
+.maxWidth {
+  width: 100%;   
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var.$space-medium;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26) inset ;
+  border-radius: var.$radius-small;
+  background: var.$color-white;
+}

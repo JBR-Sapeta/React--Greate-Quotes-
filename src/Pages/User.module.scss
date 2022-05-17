@@ -1,0 +1,12 @@
+@use "../Styles/variables.scss" as var;
+
+.section {
+    width: 100%;
+    padding: var.$space-large var.$space-large var.$space-xhuge var.$space-large;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-size: var.$font-large;
+   
+}  

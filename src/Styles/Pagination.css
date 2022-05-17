@@ -1,0 +1,50 @@
+.ant-pagination{
+    margin: 0;
+    padding: 0;
+
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .ant-pagination-item{
+    margin: 0 0.2rem;
+    padding: .8rem;
+    background-color: #B3A494;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+  }
+  
+  .ant-pagination-item:active{
+    transform: translateY(2px);
+  }
+
+  .ant-pagination-item-active{
+    background-color: #F9FAFB;
+    font-weight: 600;
+    
+  }
+
+  .ant-pagination-item-link{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .ant-pagination-item-link:active{
+    transform: translateY(2px);
+  }
+
+  .ant-pagination-item-link svg{
+    width: 3.2rem;
+    height: 3.2rem;
+    color: #B3A494;
+  }
+
+  

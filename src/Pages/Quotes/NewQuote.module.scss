@@ -1,0 +1,11 @@
+@use "../../Styles/variables.scss" as var;
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:var.$space-huge;;
+}
+
+

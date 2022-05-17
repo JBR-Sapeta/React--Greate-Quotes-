@@ -1,0 +1,60 @@
+@use "../../../Styles/variables.scss" as var;
+
+.form {
+  width: 100%;
+  margin: var.$space-xlarge 0;
+  padding: 0 0 var.$space-small 0  ;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  box-shadow: 2px 4px 6px 3px rgba(var.$color-secondary-dark, $alpha: 0.4);
+  border-radius: 12px;
+  background-color: rgba(var.$color-primary-light, $alpha: 0.3);
+  font-size: var.$font-xlarge;
+
+  @include var.mobile {
+
+    width: 100%;
+  }
+}
+
+.control {
+  width: 100%;
+  margin:  var.$space-small;
+
+  @include var.mobile {
+    margin: var.$space-medium var.$space-xlarge;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  textarea {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.35rem;
+    display: block;
+    border: 2px solid var.$color-primary-dark;
+    border-radius: 4px;
+    background-color: var.$color-white;
+    font: inherit;
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: var.$font-large;
+    font-weight: 600;
+    color: red;
+    
+    @include var.mobile {
+      font-size: var.$font-xlarge;
+    }
+  }
+}
+
+.actions {
+  width: 100%;
+  text-align: center;
+}

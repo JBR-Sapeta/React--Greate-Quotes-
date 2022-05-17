@@ -1,0 +1,43 @@
+@use "../../../Styles/variables.scss" as var;
+
+.form {
+  width: 100%;
+  max-width: 42rem;
+  padding: 0 0 var.$space-small 0;
+  position: relative;
+  box-shadow: 2px 4px 6px 3px rgba(var.$color-secondary-dark, $alpha: 0.4);
+  background-color: rgba(var.$color-white, $alpha: 1);
+  font-size: var.$font-xlarge;
+  text-align: center;
+}
+
+.control {
+  margin: var.$space-large var.$space-xlarge;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 35rem;
+    margin: 1rem 0;
+    padding: 0.35rem;
+    display: block;
+    border: 2px solid var.$color-primary-dark;
+    border-radius: 4px;
+    background-color: var.$color-white;
+    font: inherit;
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: var.$font-large;
+    font-weight: 600;
+    color: red;
+    @include var.mobile {
+      font-size: var.$font-xlarge;
+    }
+  }
+}

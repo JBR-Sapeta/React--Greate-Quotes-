@@ -1,0 +1,57 @@
+@use "../../Styles/variables.scss" as var;
+
+
+.message{
+  max-width: 40rem;
+  padding: var.$space-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var.$color-accent;
+  border-radius: var.$radius-medium;
+
+
+ 
+
+  h2{
+    font-size: var.$font-xlarge;
+      @include var.mobile {
+        font-size: var.$font-huge;
+      }
+  }
+  p{
+      font-size: var.$font-large;
+      @include var.mobile {
+        font-size: var.$font-xlarge;
+      }
+  }
+
+  h3{
+    font-size: var.$font-large;
+    color: red;
+    @include var.mobile {
+      font-size: var.$font-xlarge;
+    }
+  }
+
+  .error{
+    font-size: var.$font-large;
+    color: red;
+    @include var.mobile {
+      font-size: var.$font-medium;
+    }
+  }
+
+  .icon{
+      width: 5rem;
+      height: 5rem;
+      color: red;
+      fill: red;
+      
+  }
+
+
+
+
+}

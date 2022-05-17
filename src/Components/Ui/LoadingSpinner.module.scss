@@ -1,0 +1,30 @@
+@use "../../Styles/variables.scss" as var;
+
+.spinner {
+  
+  width: 140px;
+  height: 140px;
+  display: block;
+
+  &:after {
+    content: " ";
+    width: 128px;
+    height: 128px;
+    margin: 8px;
+    display: block;
+    border: 6px solid var.$color-white;
+    border-radius: 50%;
+    border-color: var.$color-accent transparent var.$color-primary transparent;
+    animation: spinner 1.2s linear infinite;
+  }
+}
+
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

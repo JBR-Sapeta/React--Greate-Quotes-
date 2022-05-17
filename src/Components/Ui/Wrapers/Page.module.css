@@ -1,0 +1,6 @@
+@use "../../Styles/variables.scss" as var;
+.page {
+  width: 60%;
+  margin: var;
+}
+/*# sourceMappingURL=Page.module.css.map */

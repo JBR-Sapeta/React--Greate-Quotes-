@@ -1,0 +1,43 @@
+@use "../../Styles/variables.scss" as var;
+
+.user {
+  width: 100%;
+  max-height: 2.5rem;
+  margin: var.$space-small 0 0 0;
+  display: flex;
+
+  @include var.mobile {
+    width: 50%;
+  }
+
+  p {
+    padding-right: 1rem;
+    font-size: var.$font-medium;
+  }
+
+  .link {
+    padding: 0 0.8rem 0.2rem 0.6rem;
+    border: 1px solid var.$color-secondary-dark;
+    background-color: var.$color-primary-light;
+    border-radius: var.$radius-huge;
+    text-align: justify;
+    font-size: var.$font-small;
+    font-weight: 600;
+    color: var.$color-secondary-dark;
+    transform: translateY(-3px);
+
+    span {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      transform: translateY(-4px);
+    }
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.5rem;
+    transform: translateY(5px);
+  }
+}

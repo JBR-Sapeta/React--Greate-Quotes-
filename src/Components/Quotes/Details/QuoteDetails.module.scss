@@ -1,0 +1,46 @@
+
+@use "../../../Styles/variables.scss" as var;
+
+.quote{
+
+    width: 100%;
+    min-height: 20rem;
+    margin: 0 0 var.$space-medium 0;
+    padding: var.$space-medium ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var.$radius-medium;
+    background-color: var.$color-white;
+    @include var.mobile {
+      padding: var.$space-xlarge;
+    }
+    figure {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+      }
+
+      blockquote {
+        margin: 0;
+        text-align: left;
+        font-size: var.$font-xlarge;
+        color: var.$color-black;
+      }
+  
+      p {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      figcaption {
+        font-size: var.$font-large;
+        font-style: italic;
+        color: var.$color-grey-700;
+      }
+  }
+  
+   
+  

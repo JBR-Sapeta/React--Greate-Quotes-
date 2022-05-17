@@ -1,0 +1,89 @@
+@use "../../Styles/variables.scss" as var;
+
+.section {
+  width: 100%;
+  padding: var.$space-small;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid;
+  border-color: var.$color-secondary transparent;
+  color: var.$color-secondary-dark;
+
+  @include var.mobile {
+    padding: var.$space-large;
+  }
+
+  & p {
+    font-size: var.$font-large;
+    text-align: center;
+  }
+}
+
+.form {
+  width: 100%;
+  margin: var.$space-medium var.$space-xlarge;
+  padding: var.$space-small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: var.$color-primary-dark solid 1px;
+  border-radius: var.$radius-xlarge;
+  background-color: white;
+
+  @include var.mobile {
+    width: 60%;
+    padding: var.$space-huge var.$space-medium;
+  }
+
+  & label {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: var.$font-medium;
+    font-weight: bold;
+    text-align: center;
+
+    @include var.mobile {
+      font-size: var.$font-large;
+    }
+  }
+
+  & input {
+    width: 100%;
+    max-width: 20rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+    display: block;
+    border: 2px solid var.$color-primary-dark;
+    border-radius: 0.5rem;
+    background-color: white;
+    font: inherit;
+    font-size: var.$font-large;
+    text-align: left;
+  }
+
+  & textarea {
+    width: 85%;
+    border: 2px solid var.$color-primary-dark;
+    font-size: var.$font-large;
+    @include var.mobile {
+      width: 70%;
+    }
+  }
+
+  & div {
+    width: 100%;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+}

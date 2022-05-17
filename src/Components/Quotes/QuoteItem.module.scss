@@ -1,0 +1,60 @@
+@use "../../Styles/variables.scss" as var;
+
+.item {
+  min-height: 20rem;
+  padding: var.$space-xlarge;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var.$radius-medium;
+  background-color: var.$color-white;
+
+  figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    @include var.mobile {
+      width: 75%;
+    }
+  }
+
+  blockquote {
+    margin: 0;
+    text-align: left;
+    font-size: var.$font-xlarge;
+    color: var.$color-black;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  figcaption {
+    margin: var.$space-small 0;
+    font-size: var.$font-large;
+    font-style: italic;
+    color: var.$color-grey-700;
+  }
+}
+
+.user {
+  order: 2;
+  width: 100%;
+  margin: var.$space-small 0;
+  @include var.mobile {
+    order: 3;
+  }
+}
+
+.actions {
+  order: 3;
+  width: 100%;
+  margin: var.$space-xlarge 0 0 0;
+  text-align: center;
+  @include var.mobile {
+    width: auto;
+    text-align: right;
+    order: 2;
+  }
+}

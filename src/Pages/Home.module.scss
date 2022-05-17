@@ -1,0 +1,105 @@
+@use "../Styles/variables.scss" as var;
+
+.h2 {
+  padding: var.$space-large;
+  font-size: var.$font-huge;
+  color: var.$color-secondary-dark;
+  text-align: center;
+  @include var.mobile {
+    font-size: var.$font-xhuge;
+  }
+}
+
+.hr {
+  width: 80%;
+  margin-bottom: var.$space-large;
+  color: var.$color-secondary-dark;
+}
+
+.figure {
+  width: 30rem;
+  height: 30rem;
+  @include var.mobile {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border: 2px solid var.$color-primary-dark;
+    border-radius: var.$radius-small;
+
+    @include var.mobile {
+      width: 50rem;
+      height: 50rem;
+    }
+  }
+}
+
+.section {
+  width: 100%;
+  padding: var.$space-small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var.$space-large;
+}
+
+.container {
+  width: 100%;
+  padding: var.$space-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var.$color-secondary-dark;
+  @include var.mobile {
+    width: 50rem;
+  }
+
+  p {
+    font-size: var.$font-large;
+    @include var.mobile {
+        font-size: var.$font-xlarge;
+      }
+  }
+
+  h3 {
+    font-size: var.$font-large;
+    @include var.mobile {
+        font-size: var.$font-xlarge;
+      }
+  }
+}
+
+.span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var.$font-huge;
+  font-weight: 600;
+  color: var.$color-accent-dark;
+}
+
+.link {
+  margin: var.$space-xlarge 0;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  padding-left: var.$space-small;
+  color: var.$color-accent-dark;
+}

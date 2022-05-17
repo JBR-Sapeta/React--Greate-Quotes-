@@ -1,0 +1,22 @@
+@use "../../Styles/variables.scss" as var;
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 120rem;
+  background: url(../../Assets/Img/bcg1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding: 20rem 0 10rem 0;
+}
+/*# sourceMappingURL=Background.module.css.map */

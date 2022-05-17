@@ -1,0 +1,62 @@
+@use "../../Styles/variables.scss" as var;
+
+.footer {
+  width: 100%;
+  min-height: 20rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var.$space-large;
+  border-top: 1px solid var.$color-primary-light;
+  background-color: var.$color-secondary-dark;
+  color: var.$color-primary-light;
+
+  .baner {
+    font-size: var.$font-huge;
+    font-weight: 600;
+
+    @include var.mobile {
+      font-size: var.$font-xhuge;
+    }
+  }
+
+  .media {
+    font-size: var.$font-huge;
+    transform: translateX(-15px);
+
+    @include var.mobile {
+      transform: translateX(0);
+    }
+
+    & a {
+      font-size: var.$font-large;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .copy {
+    font-size: var.$font-large;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transform: translateY(10px);
+  }
+
+  .parag {
+    font-size: var.$font-large;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: var.$space-small;
+    fill: var.$color-primary-light;
+    transform: translateY(5px);
+  }
+}

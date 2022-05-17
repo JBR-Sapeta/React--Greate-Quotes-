@@ -1,0 +1,64 @@
+@use "../../Styles/variables.scss" as var;
+
+.section {
+  width: 100%;
+  padding: var.$space-large;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  & h2 {
+    font-size: var.$font-xhuge;
+  }
+}
+
+.form {
+  width: 100%;
+  margin: var.$space-medium var.$space-xlarge;
+  padding: var.$space-xlarge var.$space-medium;
+  border: var.$color-secondary solid 2px;
+  border-radius: var.$radius-xlarge;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include var.mobile {
+    width: 60%;
+    padding: var.$space-huge var.$space-medium;
+  }
+
+  & label {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+    font-size: var.$font-medium;
+    text-align: center;
+    @include var.mobile {
+      font-size: var.$font-large;
+    }
+  }
+
+  & input {
+    width: 100%;
+    max-width: 20rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+    display: block;
+    border: 2px solid var.$color-secondary;
+    border-radius: 0.5rem;
+    background-color: white;
+    font: inherit;
+    font-size: var.$font-large;
+    text-align: left;
+  }
+
+  & div {
+    width: 100%;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

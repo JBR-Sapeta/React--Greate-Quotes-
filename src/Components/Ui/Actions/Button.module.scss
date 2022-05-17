@@ -1,0 +1,72 @@
+@use "../../../Styles/variables.scss" as var;
+
+.primary {
+  margin: 1rem;
+  padding: var.$space-small;
+  border: 2px solid var.$color-primary;
+  border-radius: var.$radius-small;
+  box-shadow: 2px 5px 10px rgba($color: #000000, $alpha: 0.3);
+  background-color: var.$color-primary;
+  font-size: var.$font-large;
+  font-weight: 600;
+  color: var.$color-secondary-dark;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid var.$color-primary-dark;
+    background-color: var.$color-white;
+    color: var.$color-primary-dark;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.secondary {
+  margin: 1rem;
+  padding: var.$space-small;
+  border: 2px solid var.$color-secondary-light;
+  border-radius: var.$radius-small;
+  box-shadow: 2px 5px 10px rgba($color: #000000, $alpha: 0.3);
+  background-color: var.$color-secondary-light;
+  font-size: var.$font-large;
+  font-weight: 600;
+  color: var.$color-secondary-dark;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid var.$color-secondary;
+    background-color: var.$color-white;
+    color: var.$color-secondary;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.accent {
+  margin: 1rem;
+  padding: var.$space-small;
+  border: 2px solid var.$color-accent;
+  border-radius: var.$radius-small;
+  box-shadow: 2px 5px 10px rgba($color: #000000, $alpha: 0.3);
+  background-color: var.$color-accent;
+  font-size: var.$font-large;
+  font-weight: 600;
+  color: var.$color-secondary-dark;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid  var.$color-secondary-dark;;
+    background-color: var.$color-white;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}

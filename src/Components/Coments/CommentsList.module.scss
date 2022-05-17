@@ -1,0 +1,11 @@
+@use "../../Styles/variables.scss" as var;
+
+.comments {
+  width: 100%;
+  margin: 2rem;
+  padding: 0;
+
+  @include var.mobile {
+    width: 90%;
+  }
+}

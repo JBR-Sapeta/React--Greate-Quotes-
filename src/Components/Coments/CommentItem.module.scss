@@ -1,0 +1,93 @@
+@use "../../Styles/variables.scss" as var;
+
+.item {
+  width: 100%;
+  min-height: 5rem;
+  margin-bottom: var.$space-medium;
+  padding: var.$space-small var.$space-small var.$space-medium var.$space-small;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid var.$color-primary-dark;
+  border-radius: var.$radius-medium;
+  background-color: var.$color-white;
+  font-size: var.$font-large;
+
+  @include var.mobile {
+    padding: var.$space-small var.$space-large var.$space-large var.$space-large;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .author {
+    padding-right: var.$space-large;
+    font-style: italic;
+    font-size: var.$font-medium;
+    text-align: right;
+  }
+}
+
+.comment {
+  width: 100%;
+}
+
+.user {
+  width: 100%;
+  margin: var.$space-small 0 0 0;
+  display: flex;
+
+  @include var.mobile {
+    width: 50%;
+  }
+
+  p {
+    padding-right: 1rem;
+    font-size: var.$font-medium;
+    transform: translateY(-10px);
+  }
+
+  .link {
+    max-height: 2.5rem;
+    padding: 0 0.8rem 0.2rem 0.6rem;
+    border: 1px solid var.$color-secondary-dark;
+    background-color: var.$color-primary-light;
+    border-radius: var.$radius-huge;
+    text-align: justify;
+    font-size: var.$font-small;
+    font-weight: 600;
+    color: var.$color-secondary-dark;
+
+    span {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      transform: translateY(-4px);
+    }
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.5rem;
+    transform: translateY(5px);
+  }
+}
+
+.message {
+  margin-bottom: var.$space-medium;
+  padding: var.$space-small var.$space-large var.$space-xlarge var.$space-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var.$font-large;
+  border: 2px solid var.$color-primary-dark;
+  border-radius: var.$radius-medium;
+  background-color: var.$color-white;
+
+  h3 {
+    font-size: var.$font-huge;
+  }
+  color: var.$color-secondary-dark;
+}

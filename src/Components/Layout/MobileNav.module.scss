@@ -1,0 +1,56 @@
+@use "../../Styles/variables.scss" as var;
+
+.nav {
+  width:80%;
+  height: 70%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  
+  
+  background: rgba(0, 0, 0, 0.9);
+
+  .exit {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    border: none;
+    background-color: transparent;
+    color: var.$color-primary;
+    cursor: pointer;
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+  
+  button{
+    cursor: pointer;
+     margin-left: var.$space-small;
+     padding: var.$space-small;
+     border: 2px solid transparent;
+     border-radius: var.$radius-large;
+     font-size: var.$font-xlarge;
+     font-weight: 600;
+     background-color: var.$color-accent;
+  
+     &:hover {
+       border-color: var.$color-accent;
+       background-color: transparent;
+       color: var.$color-accent;
+     }
+   
+     &:active {
+       transform: translateY(2px);
+     }
+  
+   }
+}
+
+
+

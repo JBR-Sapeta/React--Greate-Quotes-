@@ -1,0 +1,96 @@
+@use "../../Styles/variables.scss" as var;
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: var.$color-primary-light;
+  transform: translateY(10px);
+  .link {
+    margin-left: var.$space-small;
+    display: flex;
+    align-items: center;
+    font-size: var.$font-xlarge;
+    font-weight: 600;
+    text-decoration: none;
+
+    & a:hover {
+      border-color: var.$color-primary-light;
+    }
+
+    & a:active {
+      transform: translateY(2px);
+    }
+  }
+  .btn {
+    cursor: pointer;
+    margin-left: var.$space-small;
+    padding: var.$space-small;
+    border: 2px solid transparent;
+    border-radius: var.$radius-large;
+    font-size: var.$font-xlarge;
+    font-weight: 600;
+    background-color: var.$color-accent;
+
+    &:hover {
+      border-color: var.$color-accent;
+      background-color: transparent;
+      color: var.$color-accent;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+.mobileList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var.$color-primary;
+  transform: translateY(10px);
+  .link {
+    margin: var.$space-small;
+    display: flex;
+    align-items: center;
+    font-size: var.$font-xlarge;
+    font-weight: 600;
+    text-decoration: none;
+
+    & a:hover {
+      border-color: var.$color-primary;
+    }
+
+    & a:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+.standard {
+  padding: var.$space-small;
+  border: 2px solid transparent;
+  border-radius: var.$radius-large;
+}
+
+.active {
+  padding: var.$space-small;
+  border: 2px solid var.$color-primary-light;
+  border-radius: var.$radius-large;
+}
+
+.mobileStandard {
+  padding: var.$space-small;
+  border: 2px solid transparent;
+  border-radius: var.$radius-large;
+}
+
+.mobileActive {
+  padding: var.$space-small;
+  border: 2px solid var.$color-primary;
+  border-radius: var.$radius-large;
+}
