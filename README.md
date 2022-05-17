@@ -9,9 +9,15 @@
 # Important 
 - Backend is deployed on Firebase realtime database. Backend has no validation and data transforming, for that reason some data need to be transformed on frontend.
 - Some forms have no validation, to allow users entry invalid data and create error messages.
-- Redux is used only for managing Authentication state and could be replaced by React Context.
+- Redux is only used for managing Authentication state and could be replaced by React Context.
 
-
+## How to start 
+- Insert your Firebase realtime database URL into FIREBASE_URL variable - path /src/lib/api.js
+- To add authentication pass URL with your API_KEY  into authenticateAccount function - path /src/lib/api.js. 
+  More information:
+  https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
+  https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password
+ - Now you are redy to run scripts.
 
 ## Available Scripts
 
