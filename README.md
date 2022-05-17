@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Technologies 
+- React 18.0.0
+- Redux 4.2.0
+- React Router 6.3.0
+- SASS/SCSS
+- RWD
+- Node 16.13.2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Important 
+- Backend is deployed on Firebase realtime database. Backend has no validation and data transforming, for that reason some data need to be transformed on frontend.
+- Some forms have no validation, to allow users entry invalid data and create error messages.
+- Redux is used only for managing Authentication state and could be replaced by React Context.
+
+
 
 ## Available Scripts
 
@@ -27,5 +38,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
